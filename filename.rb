@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 if ARGV.empty?
   $stderr.puts "Usage: ./filename.rb <filename>"
