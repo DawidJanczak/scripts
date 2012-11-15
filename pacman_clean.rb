@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
 
-packages = `pacman -Qtd`.split.reject { |pkg| pkg =~ /\d+/ }
-packages.each { |pkg| system("sudo pacman -Rs #{pkg}") }
+`pacman -Qtd`.split.each { |pkg| system("sudo pacman -Rs #{pkg}") unless pkg[/^\d+/] }
