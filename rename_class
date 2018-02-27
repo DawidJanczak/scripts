@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if (( "$#" < 2)); then
+  echo Script usage: 'rename_class <ClassNameFrom> <ClassNameTo>'
+  exit 1
+fi
+
+sed -i 's/'"$1"'/'"$2"'/g' app/**/*rb spec/**/*rb
+# TODO: get file names from class names and git mv the files
+# git mv 

@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+set -e
+
+echo "Working weight:"
+read weight
+
+echo "$(bc <<< "$weight * 0.4") x 5"
+echo "$(bc <<< "$weight * 0.6") x 3"
+echo "$(bc <<< "$weight * 0.8") x 2"
