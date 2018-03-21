@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Magnet
+Type=Application
+Comment=Open a magnet link remotly with the help of a script
+Exec=/home/gat/scripts/magnet_link_transfer.sh %U
+Categories=Network;WebBrowser;
+MimeType=x-scheme-handler/magnet;

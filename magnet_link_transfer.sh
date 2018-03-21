@@ -3,7 +3,7 @@
 test -z $1 && echo "need magnet link!" && exit -1
 
 # the file should define HOST, PORT, USER and PASS variables
-source ./transmission_config
+source $HOME/scripts/transmission_config
 
 LINK=$1
 PAUSED="false"
