@@ -1,0 +1,8 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = pacman-mirrorlist
+
+[Action]
+When = PostTransaction
+Exec = /home/gat/scripts/setup_mirrorlist.sh
