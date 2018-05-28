@@ -1,0 +1,12 @@
+[Unit]
+Description=hdmi video hotplug
+
+[Service]
+User=gat
+Group=gat
+Type=simple
+RemainAfterExit=no
+ExecStart=/home/gat/scripts/hdmi_video_toggle.sh
+
+[Install]
+WantedBy=multi-user.target
